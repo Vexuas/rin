@@ -6,6 +6,7 @@ import { addDays, differenceInSeconds } from "date-fns";
  * Does this by using today's Date object as an anchor to figure out what date
  * the particular day of the week will fall on.
  *
+ *
  * @param {number} day
  * @param {number} hour
  * @param {number} minute
@@ -14,10 +15,19 @@ function getDateWithDayOfTheWeek(day, hour, minute) {
   let now = new Date();
   let result;
 
+  // If current time is past the release time, we calculate for next week's airing.
   if (now.getDay() > day) {
     result = addDays(now, day - now.getDay() + 7);
   } else {
-    result = addDays(now, day - now.getDay());
+    if (now.getHours() > hour) {
+      result = addDays(now, day - now.getDay() + 7);
+    } else {
+      if (now.getMinutes() > minute) {
+        result = result = addDays(now, day - now.getDay());
+      } else {
+        result = addDays(now, day - now.getDay());
+      }
+    }
   }
 
   result.setHours(hour);
@@ -67,6 +77,7 @@ function convertSecondsToMinutes(seconds) {
 }
 
 function convertSecondsToInterval(seconds, interval) {
+  seconds = parseInt(seconds, 10);
   const result = Math.floor(seconds / interval);
 
   if (result) {
