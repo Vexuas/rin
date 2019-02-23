@@ -6,18 +6,18 @@ const shows = [
   {
     id: 1,
     title: "That Time I Got Reincarnated as a Slime",
-    air_day: "monday",
-    air_hour: "23",
-    air_minute: "00",
+    air_day: 1,
+    air_hour: 23,
+    air_minute: 0,
     img_src:
       "https://cdn.discordapp.com/attachments/511245116871278594/548785635784130570/slime.jpg"
   },
   {
     id: 2,
     title: "The Rising of the Shield Hero",
-    air_day: "tuesday",
-    air_hour: "21",
-    air_minute: "00",
+    air_day: 2,
+    air_hour: 21,
+    air_minute: 0,
     img_src:
       "https://cdn.discordapp.com/attachments/511245116871278594/548785611314561036/shield.jpg"
   }

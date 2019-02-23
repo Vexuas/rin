@@ -17,7 +17,7 @@ class ShowCard extends Component {
       <article className="ShowCard" style={styles}>
         <ShowCardTopBanner
           air_day={show.air_day}
-          air_hour={show.air_time}
+          air_hour={show.air_hour}
           air_minute={show.air_minute}
         />
         <ShowCardBottomBanner title={show.title} />
