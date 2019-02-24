@@ -11,7 +11,7 @@ import { addDays, differenceInSeconds } from "date-fns";
  * @param {number} hour
  * @param {number} minute
  */
-function getDateWithDayOfTheWeek(day, hour, minute) {
+export function getDateWithDayOfTheWeek(day, hour, minute) {
   let now = new Date();
   let result;
 
