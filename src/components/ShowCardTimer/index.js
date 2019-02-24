@@ -64,9 +64,9 @@ function paddedTime(t) {
   }
 }
 
-function convertSecondsToDays(seconds) {
-  return convertSecondsToInterval(seconds, 60 * 60 * 24);
-}
+// function convertSecondsToDays(seconds) {
+//   return convertSecondsToInterval(seconds, 60 * 60 * 24);
+// }
 
 function convertSecondsToHours(seconds) {
   return convertSecondsToInterval(seconds, 60 * 60);

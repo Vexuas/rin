@@ -1,3 +1,10 @@
+This project keeps track of all the anime I'm watching this season and shows it to me in a nice timer format so I know when to look forward to things.
+
+Future Features:
+
+- Actual backend to persist my anime
+- A way to mark episodes I've already watched and "snooze" them
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
