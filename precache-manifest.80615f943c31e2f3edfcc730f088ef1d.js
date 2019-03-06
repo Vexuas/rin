@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/rin/static/css/main.b7dce323.chunk.css"
   },
   {
-    "revision": "3030762259722e511608e4e8d6c45b60",
+    "revision": "ea845782465424cb8f864137f40d59cc",
     "url": "/rin/index.html"
   }
 ];
