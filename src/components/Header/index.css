@@ -1,0 +1,47 @@
+.RinHeader {
+  position: fixed;
+  height: 38px;
+  color: white;
+  background-color: black;
+  width: 100%;
+  font-size: 1.3rem;
+  display: flex;
+  margin: auto;
+  z-index: 100;
+  min-width: 540px;
+}
+.rinTitles {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  box-sizing: border-box;
+  margin-left: 0;
+  justify-items: end;
+}
+#rinMainTitle {
+  position: relative;
+  padding: 0px 20px;
+  color: #ff9933;
+}
+#rinMainTitle:after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background-color: #ff9933;
+}
+#rinDescription {
+  padding-left: 20px;
+}
+.rinTime {
+  margin: auto;
+  width: 180px;
+  padding: 0px 20px;
+  display: flex;
+  letter-spacing: 1px;
+  justify-content: center;
+  margin-right: 0;
+  align-items: center;
+  box-sizing: border-box;
+}

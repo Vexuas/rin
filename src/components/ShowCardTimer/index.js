@@ -18,12 +18,19 @@ export function getDateWithDayOfTheWeek(day, hour, minute) {
   // If current time is past the release time, we calculate for next week's airing.
   if (now.getDay() > day) {
     result = addDays(now, day - now.getDay() + 7);
+    console.log("hello");
   } else {
-    if (now.getHours() > hour) {
+    if (now.getDay() === day && now.getHours() > hour) {
       result = addDays(now, day - now.getDay() + 7);
+      console.log("what");
     } else {
-      if (now.getMinutes() > minute) {
-        result = result = addDays(now, day - now.getDay());
+      if (
+        now.getDay() === day &&
+        now.getHours() === hour &&
+        now.getMinutes() > minute
+      ) {
+        result = result = addDays(now, day - now.getDay() + 7);
+        console.log("whatthe");
       } else {
         result = addDays(now, day - now.getDay());
       }

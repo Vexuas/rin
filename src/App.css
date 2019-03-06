@@ -1,7 +1,5 @@
-.RinHeader {
-  height: 58px;
-}
 .RinContent {
+  margin-top: 50px;
   width: 1284px;
   display: flex;
   justify-content: center;

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ShowFeed from "./components/ShowFeed";
+import Header from "./components/Header";
 import "./App.css";
 
 const shows = [
@@ -81,9 +82,7 @@ class App extends Component {
   render() {
     return (
       <div className="Rin">
-        <header className="RinHeader">
-          <span>Hello header!</span>
-        </header>
+        <Header />
         <div className="content--center">
           <main className="RinContent">
             <ShowFeed shows={shows} />
